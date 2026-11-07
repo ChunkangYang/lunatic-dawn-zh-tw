@@ -1,0 +1,31 @@
+本專案的授權分為兩部分：
+
+1) 程式碼（apply_patch.py、tools/ 內的腳本）：MIT License
+
+Copyright (c) 2026 lunatic-dawn-zh-tw contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+2) 本專案作者撰寫的繁體中文譯文（以位元組形式存在於 patch/ 內的補丁）：
+   Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+   https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+3) 遊戲原作（原文、圖像、音樂、程式與其商標）的著作權屬其權利人（ARTDINK 等）所有。
+   本專案不授權、不散布，上述 1)、2) 兩種授權也都不涵蓋原作的任何內容。
+   本專案為非官方、非營利之粉絲作品；權利人要求下架或修改時，作者將配合處理。

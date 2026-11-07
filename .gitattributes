@@ -1,0 +1,4 @@
+*.diff -text
+*.csv text eol=lf
+*.md text eol=lf
+*.py text eol=lf

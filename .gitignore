@@ -1,0 +1,12 @@
+DELETE_*
+*.exe
+*.orig
+*.BMH
+*.bmh
+*.BMP
+*.bmp
+*.LDP
+*.crash.dmp
+__pycache__/
+*.pyc
+dist/
