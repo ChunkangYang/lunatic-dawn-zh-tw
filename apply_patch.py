@@ -86,6 +86,9 @@ def locate(game, rel):
 
 def build_new(entry, data, patch_dir):
     diff = open(os.path.join(patch_dir, entry['diff']), 'rb').read()
+    if entry['kind'] == 'full':
+        import zlib
+        return zlib.decompress(diff)
     if entry['kind'] == 'bmh':
         _, dib = bmh_to_payload(data)
         return dib_to_bmh_like(apply_diff(dib, diff), data)

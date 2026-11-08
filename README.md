@@ -3,7 +3,7 @@
 對象：《Lunatic Dawn: Passage of the Book》（ルナティックドーン 前途への道標，ARTDINK，Steam App 335420）。
 視窗標題沿用 1999 年台灣中文版名稱「俠客遊：前途道標」。**本專案與 ARTDINK、Valve、第三波及任何原發行商無關。**
 
-狀態：v0.2.0 測試版。已知限制見 [KNOWN_ISSUES.md](KNOWN_ISSUES.md)。
+狀態：v0.2.1 測試版。已知限制見 [KNOWN_ISSUES.md](KNOWN_ISSUES.md)。
 
 ## 適用條件
 
@@ -16,8 +16,8 @@
 ## 安裝
 
 1. 自 [Releases](../../releases) 下載其一並解壓縮：
-   - exe 版：`LunaticDawn-zh-TW-0.2.0-tw-exe.zip`
-   - Python 版：`LunaticDawn-zh-TW-0.2.0-tw.zip`
+   - exe 版：`LunaticDawn-zh-TW-0.2.1-tw-exe.zip`
+   - Python 版：`LunaticDawn-zh-TW-0.2.1-tw.zip`
 2. 執行：
    - exe 版：雙擊 `LunaticDawn-zh-TW-patcher.exe`
    - Python 版：`python apply_patch.py`
@@ -46,12 +46,13 @@
 ## 補丁內容
 
 - exe 內文字：選單、對話框、系統訊息、道具／武器／防具、怪物、地名人名稱號、NPC 台詞、委託任務。
+- 說明檔（工具列「?」）：76 頁說明、目錄、索引。
 - 介面圖 49 檔：狀態視窗、按鈕、角色符號對話框、旗幟國名、地圖城鎮名與街道名。
 - 版面：選單列間距、快速鍵對齊、按鈕文字置中、視窗標題。
 
 ## 已知限制
 
-- 未處理：`DUNG*.DAT`、結局與標題畫面圖內文字、牌面圖、手冊 HTML 與 `ld95.chm`（日文）。
+- 未處理：`DUNG*.DAT`、結局與標題畫面圖內文字、牌面圖、遊戲資料夾內的手冊網頁（日文）。
 - 未完整驗證：戰鬥訊息、名稱後接句語序、「%D先生」性別用語、特殊字尾道具名。
 - 譯文為 AI 輔助，未逐條人工校對。回報請開 Issue，附截圖與畫面位置。
 

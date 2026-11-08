@@ -1,6 +1,6 @@
 {
  "name": "Lunatic Dawn: Passage of the Book — 繁體中文補丁（俠客遊：前途道標）",
- "version": "0.2.0",
+ "version": "0.2.1",
  "profile": "tw",
  "required_acp": 950,
  "steam_app_id": 335420,
@@ -11,9 +11,17 @@
    "kind": "raw",
    "diff": "Ld95.exe.diff",
    "orig_sha256": "6c817a0978cd9f02b66a7f15e6e46b752e490eaffaa520e18d360d296d40d5d2",
-   "new_sha256": "1c452ace65c9d3d677d7306f1eaab5f0b22bfbe37d253fc999dbf10e4e4044d6",
-   "runs": 23659,
+   "new_sha256": "3d02d4d54575b714966c7107cfe7615ca0b3fcd58be31fc61332712e7b1bc84e",
+   "runs": 24700,
    "size": 7090176
+  },
+  {
+   "path": "ld95.chm",
+   "kind": "full",
+   "diff": "ld95.chm.full",
+   "orig_sha256": "e90859c8b2e043d7ce94be0ae483ed54193b7ba9c7e694063ad914a4ce1a0a5c",
+   "new_sha256": "e94ac0f2da0bc661e2e40349e60a2630cd6f884ca5622fb1d8cba7b8c87c72ba",
+   "size": 119074
   },
   {
    "path": "RES/F_MARK.BMH",
