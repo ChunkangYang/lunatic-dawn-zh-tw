@@ -3,7 +3,7 @@
 對象：《Lunatic Dawn: Passage of the Book》（ルナティックドーン 前途への道標，ARTDINK，Steam App 335420）。
 視窗標題沿用 1999 年台灣中文版名稱「俠客遊：前途道標」。**本專案與 ARTDINK、Valve、第三波及任何原發行商無關。**
 
-狀態：v0.2.1 測試版。已知限制見 [KNOWN_ISSUES.md](KNOWN_ISSUES.md)。
+狀態：v0.2.2 測試版。已知限制見 [KNOWN_ISSUES.md](KNOWN_ISSUES.md)。
 
 ## 適用條件
 
@@ -16,8 +16,8 @@
 ## 安裝
 
 1. 自 [Releases](../../releases) 下載其一並解壓縮：
-   - exe 版：`LunaticDawn-zh-TW-0.2.1-tw-exe.zip`
-   - Python 版：`LunaticDawn-zh-TW-0.2.1-tw.zip`
+   - exe 版：`LunaticDawn-zh-TW-0.2.2-tw-exe.zip`
+   - Python 版：`LunaticDawn-zh-TW-0.2.2-tw.zip`
 2. 執行：
    - exe 版：雙擊 `LunaticDawn-zh-TW-patcher.exe`
    - Python 版：`python apply_patch.py`
