@@ -9,28 +9,34 @@
 
 - Steam 正版《ルナティックドーン 前途への道標》，`Ld95.exe` 版本 **1.0.3.16**（補丁會用 SHA-256 檢查，版本不符會拒絕套用）
 - Windows 10／11
-- [Python 3.8+](https://www.python.org/downloads/)（只用標準函式庫）
+- [Python 3.8+](https://www.python.org/downloads/)（只用標準函式庫）；**沒裝 Python 可改下載 exe 版**（見下）
 - **Windows 系統地區（非 Unicode 程式的語言）必須是「中文（台灣）」**，原因見下
 
 ## 安裝
 
 1. 到 [Releases](../../releases) 下載 `LunaticDawn-zh-TW-0.2.0-tw.zip` 並解壓縮（或直接 clone 本 repo）。
-2. 設定系統地區為中文（台灣）並**重新開機**：
-   設定 → 時間與語言 → 語言與區域 → 管理語言設定 → 變更系統地區設定 → 「中文（繁體，台灣）」。
-   不要勾「Beta：使用 Unicode UTF-8」。**不要用 Locale Emulator**。
-3. 在解壓縮資料夾執行：
+2. 在解壓縮資料夾執行：
    ```
    python apply_patch.py
    ```
    會自動找 Steam 的遊戲資料夾（也可用 `--game "路徑"` 指定），先把被修改的檔案備份成 `*.orig`，再套用補丁並檢查雜湊。
-4. 從 Steam 啟動遊戲，**請新建世界**（舊存檔內的名稱仍是日文碼，在繁中系統會亂碼）。
+3. 從 Steam 啟動遊戲，**請新建世界**（舊存檔內的名稱仍是日文碼，在繁中系統會亂碼）。
 
 | 指令 | 作用 |
 |---|---|
 | `python apply_patch.py --check` | 只檢查能否套用，不改檔 |
 | `python apply_patch.py --restore` | 還原成日文原版（用安裝時留下的 `*.orig`） |
 
-Steam「驗證遊戲檔案完整性」會把檔案還原成日文版，重新執行 `apply_patch.py` 即可。
+### 免安裝 Python 的 exe 版
+
+Releases 另有 `LunaticDawn-zh-TW-0.2.0-tw-exe.zip`：解壓縮後雙擊 `LunaticDawn-zh-TW-patcher.exe` 即可套用（功能與 `apply_patch.py` 相同，也接受 `--check`、`--restore`、`--game` 參數）。
+exe 為 PyInstaller 打包、**未經程式碼簽章**，Windows SmartScreen 可能顯示「未知的發行者」，部分防毒軟體可能**誤報**（因為它會改寫遊戲的 exe）。若被擋或誤報，請改用 Python 版（原始碼完整可讀）。
+
+### 備份位置與 Steam 注意事項
+
+- **原始檔備份**：每個被修改的檔案都會在**原位置**備份成「原檔名＋`.orig`」，例如 `Ld95.exe` → `Ld95.exe.orig`、介面圖 `XXX.BMH` → `XXX.BMH.orig`（都在遊戲資料夾內，與原檔同一層）。`--restore` 就是用這些 `.orig` 還原；請勿刪除它們。
+- **套用補丁後，請不要使用 Steam 的「驗證遊戲檔案完整性」**：Steam 會把被修改的檔案還原成日文原版（補丁失效）。若不小心按了，重新執行 `apply_patch.py` 即可再套用。
+- 遊戲若有更新（`Ld95.exe` 版本變動），補丁會因雜湊不符而拒絕套用；請先 `--restore` 再等待新版補丁。
 
 ### 為什麼系統地區要設成中文（台灣）？
 遊戲是 1997 年的 ANSI 程式，字串用「系統碼頁」解讀。本補丁把文字寫成 Big5（CP950），所以系統碼頁必須是 950。

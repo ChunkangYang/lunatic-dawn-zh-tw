@@ -164,4 +164,15 @@ def main():
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    try:
+        rc = main()
+    except SystemExit as ex:
+        rc = ex.code
+        if isinstance(rc, str):
+            print(rc); rc = 1
+    if getattr(sys, 'frozen', False) and len(sys.argv) == 1:  # exe 雙擊執行時，結束前暫停讓使用者看結果
+        try:
+            input('\n按 Enter 結束...')
+        except EOFError:
+            pass
+    sys.exit(rc)
